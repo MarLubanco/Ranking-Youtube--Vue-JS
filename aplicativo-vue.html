@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1>PLAYER DE MÚSICA</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" v-model="message"> {{ message }}
+                        <ol>
+                            <li v-for="dado in listadado">
+                                {{dado}}
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-5">
+                                <audio controls>
+                                    <source src="/home/surfista/Downloads/ross.mp3" type="audio/ogg">
+                                    <source src="/home/surfista/Downloads/ross.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn-success">SALVAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/home/surfista/Documentos/aplicativo.js"></script>
+
+</body>
+
+</html>
